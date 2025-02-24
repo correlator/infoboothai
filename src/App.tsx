@@ -13,6 +13,7 @@ import {
   HelpCircle,
   UserX
 } from 'lucide-react';
+import gravityLogo from './assets/gravity.png';
 
 function App() {
   return (
@@ -174,6 +175,23 @@ function App() {
           </button>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="py-4 text-center text-gray-400">
+        <a 
+          href="https://app.gravityrail.com" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="inline-flex items-center gap-2 hover:text-gray-300 transition-colors"
+        >
+          <span>Powered by Gravity Rail</span>
+          <img 
+            src={gravityLogo}
+            alt="Gravity Rail" 
+            className="h-4 w-auto"
+          />
+        </a>
+      </footer>
     </div>
   );
 }
